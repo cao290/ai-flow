@@ -1,0 +1,59 @@
+{
+  "benchmarked_at": "2026-10-28T12:11:01.456Z",
+  "keyword": "AI Agent 工具编排 2026",
+  "limit": 10,
+  "repeat": 1,
+  "manual": {
+    "avg_ms": 71996,
+    "runs": [
+      {
+        "mode": "manual",
+        "total_ms": 71996,
+        "trace": [
+          {
+            "name": "经验库查重",
+            "ms": 77
+          },
+          {
+            "name": "多源检索",
+            "ms": 71993
+          },
+          {
+            "name": "归档资料库",
+            "ms": 71996
+          }
+        ],
+        "results": 10
+      }
+    ]
+  },
+  "workflow": {
+    "avg_ms": 46961,
+    "runs": [
+      {
+        "mode": "workflow",
+        "total_ms": 46961,
+        "trace": [
+          {
+            "name": "precheck",
+            "ms": 52
+          },
+          {
+            "name": "search",
+            "ms": 45891
+          },
+          {
+            "name": "archive",
+            "ms": 1018
+          }
+        ],
+        "status": "done",
+        "results": 10
+      }
+    ]
+  },
+  "speedup": 1.53,
+  "manual_steps": 3,
+  "workflow_steps": 3,
+  "results_match": true
+}

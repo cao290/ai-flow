@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 本项目零 npm 依赖,无需 install
+      # 自测用内置 mock MCP 服务,不依赖任何外部服务与密钥
+      - name: Run e2e tests
+        run: node tests/e2e.js
+
+      - name: Engine overhead benchmark (smoke)
+        run: node benchmark/bench_overhead.js
+        env:
+          BENCH_REPEAT: 3

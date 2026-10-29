@@ -1,0 +1,55 @@
+{
+  "measured_at": "2026-10-29T00:10:38.905Z",
+  "keyword": "AI Agent 工具编排",
+  "limit": 10,
+  "shared_search": {
+    "ms": 44236,
+    "output_bytes": 21111,
+    "results": 20
+  },
+  "manual": {
+    "tool_calls": 3,
+    "moved_bytes": 41560,
+    "moved_tokens": 10791,
+    "calls": [
+      {
+        "tool": "hlib-mcp::experience_search",
+        "bytes": 42
+      },
+      {
+        "tool": "search-engine::search",
+        "bytes": 21111
+      }
+    ],
+    "final_bytes": 20454
+  },
+  "workflow": {
+    "total_ms": 9,
+    "tool_calls": 1,
+    "moved_bytes": 20407,
+    "moved_tokens": 5295,
+    "move_detail": [
+      {
+        "from": "search",
+        "to": "archive.content",
+        "bytes": 20407,
+        "whole_output_bytes": 23853,
+        "field_level": true
+      }
+    ],
+    "steps": [
+      {
+        "id": "archive",
+        "tool": "hlib-mcp::material_save",
+        "status": "done",
+        "duration_ms": 8,
+        "cached": false
+      }
+    ],
+    "final_bytes": 20454
+  },
+  "reduction_pct": 50.9,
+  "token_reduction_pct": 55.3,
+  "equivalent": true,
+  "note": "两条路径共享同一次检索输出;中转量=工具输出在步骤间被搬运的字节数"
+}

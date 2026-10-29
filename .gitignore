@@ -1,0 +1,18 @@
+# 运行产物
+data/runs/
+data/ledger.json
+data/bench_ledger.json
+data/test_ledger.json
+data/t*.json
+*.log
+
+# 依赖(本项目零依赖,此条仅防未来误装)
+node_modules/
+
+# 环境与密钥
+.env
+.env.local
+
+# 系统文件
+Thumbs.db
+.DS_Store

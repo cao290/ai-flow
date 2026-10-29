@@ -1,0 +1,1035 @@
+{
+  "probed_at": "2026-10-28T11:45:48.710Z",
+  "results": [
+    {
+      "name": "vision-mcp",
+      "ok": true,
+      "server": {
+        "name": "vision-mcp",
+        "version": "0.1.0"
+      },
+      "duration_ms": 351,
+      "tool_count": 1,
+      "tools": [
+        {
+          "name": "vision_describe_image",
+          "desc": "Send an image to a vision model and get a text answer. Use this whenever you need to read "
+        }
+      ]
+    },
+    {
+      "name": "image-mcp",
+      "ok": true,
+      "server": {
+        "name": "image-mcp",
+        "version": "0.3.0"
+      },
+      "duration_ms": 297,
+      "tool_count": 3,
+      "tools": [
+        {
+          "name": "image_generate_image",
+          "desc": "Generate one or more images from a text prompt using the agnes-image-2.1-flash model on ai"
+        },
+        {
+          "name": "image_batch_generate",
+          "desc": "Generate many images at multiple sizes in one call. Renders len(sizes) * per_size images, "
+        },
+        {
+          "name": "image_list_models",
+          "desc": "List image-generation models available on the gateway. Use this when the user asks what mo"
+        }
+      ]
+    },
+    {
+      "name": "mesh-mcp",
+      "ok": true,
+      "server": {
+        "name": "mesh-mcp",
+        "version": "0.1.0"
+      },
+      "duration_ms": 291,
+      "tool_count": 2,
+      "tools": [
+        {
+          "name": "mesh_generate_3d",
+          "desc": "Generate a 3D model via the meshy-6 model family on ai.furry.vg and return a 1024x1024 PNG"
+        },
+        {
+          "name": "mesh_list_models",
+          "desc": "List 3D-model generation models available on the gateway. Use this when the user asks what"
+        }
+      ]
+    },
+    {
+      "name": "experience-mcp",
+      "ok": true,
+      "server": {
+        "name": "experience-mcp",
+        "version": "0.1.0"
+      },
+      "duration_ms": 295,
+      "tool_count": 4,
+      "tools": [
+        {
+          "name": "experience_search",
+          "desc": "按关键词搜经验库（通用精华＋防错清单＋分项目案例＋收件箱）。遇到报错、做选型、复用做法之前先搜一次，防止重犯旧错。"
+        },
+        {
+          "name": "experience_precheck",
+          "desc": "写码/开工前必读：一次性返回通用精华＋防错清单＋指定项目的案例。每个项目开工前调一次。"
+        },
+        {
+          "name": "experience_save",
+          "desc": "每日整理入口：把一次对话的精华/防错/学到记进收件箱，只存不动正本。必须带真实案例和是否进正本的判断；用户原话先记后判，用户不一定对，不合门槛就留在收件箱。"
+        },
+        {
+          "name": "experience_list_projects",
+          "desc": "列出经验库里已沉淀的分项目名，precheck 时用来确认项目名。"
+        }
+      ]
+    },
+    {
+      "name": "hlib-mcp",
+      "ok": true,
+      "server": {
+        "name": "hlib-mcp",
+        "version": "1.0.0"
+      },
+      "duration_ms": 145,
+      "tool_count": 11,
+      "tools": [
+        {
+          "name": "library_overview",
+          "desc": "两库总览：资料库分类与文件数、经验库软件目录与文件数、最近更新的文件。写东西前先调它了解库里有什么。"
+        },
+        {
+          "name": "material_search",
+          "desc": "资料库全文检索（多词空格分隔需同时命中）。写东西查已有资料、查旧调研用这个。"
+        },
+        {
+          "name": "material_list",
+          "desc": "列出资料库某分类下的文件（分类号 01-调研报告/02-参考文档/03-数据文件/04-网页存档/05-素材资源/99-待归类；不传列全部）。"
+        },
+        {
+          "name": "material_read",
+          "desc": "读取资料库文件全文（文本文件）。"
+        },
+        {
+          "name": "material_save",
+          "desc": "把资料写入资料库。自动按规范命名 YYYY-MM-DD_主题_类型_来源.扩展名（缺日期自动补当天，缺类型自动补「文档」）并归入分类目录；同名已存在需 overwrite=true"
+        },
+        {
+          "name": "material_move",
+          "desc": "把资料库文件移到另一个分类（如 99-待归类 → 02-参考文档），文件名不变。"
+        },
+        {
+          "name": "experience_search",
+          "desc": "经验库全文检索（多词空格分隔需同时命中）。动笔前必调：可限定 software（WorkBuddy/ZCode）只搜自己软件目录的经验与错误日志。"
+        },
+        {
+          "name": "experience_list",
+          "desc": "列出经验库文件（可限定 software=WorkBuddy/ZCode）。"
+        },
+        {
+          "name": "experience_read",
+          "desc": "读取经验库文件全文（含错误日志.md）。"
+        },
+        {
+          "name": "experience_save",
+          "desc": "沉淀一条经验进经验库：一条一事，「坑→改法」能直接照做。归入 software 目录（WorkBuddy/ZCode），topic 给主题文件夹（不存在自动建），file 给目标 "
+        },
+        {
+          "name": "experience_log_error",
+          "desc": "被点名纠错时当天归档进经验库错误日志：老大原话→病根→改法→沉淀到哪→复发自检，自动编号 E-XX。"
+        }
+      ]
+    },
+    {
+      "name": "photoshop",
+      "ok": true,
+      "server": {
+        "name": "photoshop-mcp",
+        "version": "1.7.17"
+      },
+      "duration_ms": 902,
+      "tool_count": 119,
+      "tools": [
+        {
+          "name": "photoshop_ping",
+          "desc": "Verify Photoshop is installed and reachable on this machine."
+        },
+        {
+          "name": "photoshop_submit_feedback",
+          "desc": "Record the user's answer to a Photoshop MCP product-feedback nudge."
+        },
+        {
+          "name": "photoshop_get_version",
+          "desc": "Return the detected Photoshop version string."
+        },
+        {
+          "name": "photoshop_create_document",
+          "desc": "Create a new empty Photoshop document with specified dimensions and color mode."
+        },
+        {
+          "name": "photoshop_get_document_info",
+          "desc": "Get information about the active Photoshop document"
+        },
+        {
+          "name": "photoshop_list_documents",
+          "desc": "List every open Photoshop document with id, dimensions, and which tab is active (read-only"
+        },
+        {
+          "name": "photoshop_set_active_document",
+          "desc": "Switch the active document tab by document_id (preferred), zero-based index, or name."
+        },
+        {
+          "name": "photoshop_save_document",
+          "desc": "Save the active document to disk in PSD, JPEG, or PNG format."
+        },
+        {
+          "name": "photoshop_close_document",
+          "desc": "Close the active Photoshop document"
+        },
+        {
+          "name": "photoshop_create_layer",
+          "desc": "Create a new empty layer above the active layer."
+        },
+        {
+          "name": "photoshop_delete_layer",
+          "desc": "Delete the active layer"
+        },
+        {
+          "name": "photoshop_create_text_layer",
+          "desc": "Create a text layer with content, position, font size, and optional font."
+        },
+        {
+          "name": "photoshop_fill_layer",
+          "desc": "Fill the active layer with a color"
+        },
+        {
+          "name": "photoshop_get_layers",
+          "desc": "List all layers in the active document with kind, visibility, and opacity."
+        },
+        {
+          "name": "photoshop_select_layer_by_name",
+          "desc": "Select the active layer by exact name, including layers inside groups."
+        },
+        {
+          "name": "photoshop_resize_image",
+          "desc": "Resize the active image to specified dimensions"
+        },
+        {
+          "name": "photoshop_crop_document",
+          "desc": "Crop the document to specified bounds"
+        },
+        {
+          "name": "photoshop_place_image",
+          "desc": "Place an external image file as a new layer in the active document."
+        },
+        {
+          "name": "photoshop_open_image",
+          "desc": "Open an image file as a new Photoshop document."
+        },
+        {
+          "name": "photoshop_convert_to_smart_object",
+          "desc": "Convert the active layer (or a named layer) to an embedded Smart Object."
+        },
+        {
+          "name": "photoshop_replace_smart_object_contents",
+          "desc": "Replace the embedded contents of a Smart Object layer from an image file. Preserves transf"
+        },
+        {
+          "name": "photoshop_edit_smart_object_contents",
+          "desc": "Open a Smart Object for editing (double-click / Edit Contents). The embedded .psb becomes "
+        },
+        {
+          "name": "photoshop_create_smart_object_via_copy",
+          "desc": "Create an independent Smart Object via Copy — unlinked duplicate with its own embedded con"
+        },
+        {
+          "name": "photoshop_fit_layer_to_document",
+          "desc": "Scale the active layer to fit the document canvas while maintaining aspect ratio"
+        },
+        {
+          "name": "photoshop_scale_layer",
+          "desc": "Scale the active layer by a percentage"
+        },
+        {
+          "name": "photoshop_move_layer",
+          "desc": "Move the active layer by specified offset"
+        },
+        {
+          "name": "photoshop_rotate_layer",
+          "desc": "Rotate the active layer"
+        },
+        {
+          "name": "photoshop_rasterize_layer",
+          "desc": "Rasterize the active layer (convert text/smart object to normal layer)"
+        },
+        {
+          "name": "photoshop_set_layer_opacity",
+          "desc": "Set the opacity of the active layer"
+        },
+        {
+          "name": "photoshop_set_layer_blend_mode",
+          "desc": "Set the blend mode of the active layer."
+        },
+        {
+          "name": "photoshop_set_layer_visibility",
+          "desc": "Show or hide the active layer"
+        },
+        {
+          "name": "photoshop_set_layer_locked",
+          "desc": "Lock or unlock the active layer"
+        },
+        {
+          "name": "photoshop_rename_layer",
+          "desc": "Rename the active layer"
+        },
+        {
+          "name": "photoshop_duplicate_layer",
+          "desc": "Duplicate the active layer. The duplicate becomes the active layer; returns its name and, "
+        },
+        {
+          "name": "photoshop_merge_visible_layers",
+          "desc": "Merge all visible layers into one"
+        },
+        {
+          "name": "photoshop_flatten_image",
+          "desc": "Flatten all layers into a single background layer"
+        },
+        {
+          "name": "photoshop_apply_gaussian_blur",
+          "desc": "Apply Gaussian Blur filter to the active layer"
+        },
+        {
+          "name": "photoshop_apply_sharpen",
+          "desc": "Apply Unsharp Mask (sharpen) filter to the active layer"
+        },
+        {
+          "name": "photoshop_apply_noise",
+          "desc": "Apply Add Noise filter to the active layer"
+        },
+        {
+          "name": "photoshop_apply_motion_blur",
+          "desc": "Apply Motion Blur filter to the active layer"
+        },
+        {
+          "name": "photoshop_apply_high_pass",
+          "desc": "Apply the High Pass filter to the active raster layer — edge/detail extraction for sharpen"
+        },
+        {
+          "name": "photoshop_apply_smart_blur",
+          "desc": "Apply the Smart Blur filter to the active raster layer — edge-preserving blur for smoothin"
+        },
+        {
+          "name": "photoshop_adjust_brightness_contrast",
+          "desc": "Adjust brightness and contrast of the active layer."
+        },
+        {
+          "name": "photoshop_adjust_hue_saturation",
+          "desc": "Adjust hue, saturation, and lightness of the active layer"
+        },
+        {
+          "name": "photoshop_auto_levels",
+          "desc": "Apply auto levels adjustment to the active layer."
+        },
+        {
+          "name": "photoshop_auto_contrast",
+          "desc": "Apply auto contrast adjustment to the active layer"
+        },
+        {
+          "name": "photoshop_adjust_curves",
+          "desc": "Create a Curves adjustment layer on the active document."
+        },
+        {
+          "name": "photoshop_desaturate",
+          "desc": "Desaturate the active layer (convert to grayscale)"
+        },
+        {
+          "name": "photoshop_invert",
+          "desc": "Invert colors of the active layer"
+        },
+        {
+          "name": "photoshop_list_fonts",
+          "desc": "List installed fonts available to Photoshop."
+        },
+        {
+          "name": "photoshop_set_text_font",
+          "desc": "Set font family and size for active text layer."
+        },
+        {
+          "name": "photoshop_set_text_color",
+          "desc": "Set color for active text layer"
+        },
+        {
+          "name": "photoshop_set_text_alignment",
+          "desc": "Set text alignment for active text layer"
+        },
+        {
+          "name": "photoshop_update_text_content",
+          "desc": "Update the text content of active text layer"
+        },
+        {
+          "name": "photoshop_get_selection_bounds",
+          "desc": "Read the active pixel selection bounds in document pixels (read-only)."
+        },
+        {
+          "name": "photoshop_select_ellipse",
+          "desc": "Create an elliptical pixel selection from a bounding box (anti-aliased)."
+        },
+        {
+          "name": "photoshop_expand_selection",
+          "desc": "Expand the active pixel selection outward by a pixel amount."
+        },
+        {
+          "name": "photoshop_contract_selection",
+          "desc": "Contract (shrink) the active pixel selection inward by a pixel amount."
+        },
+        {
+          "name": "photoshop_feather_selection",
+          "desc": "Feather (soften) the edges of the active pixel selection."
+        },
+        {
+          "name": "photoshop_save_selection",
+          "desc": "Save the active pixel selection to a new alpha channel."
+        },
+        {
+          "name": "photoshop_select_rectangle",
+          "desc": "Create a rectangular pixel selection from corner coordinates."
+        },
+        {
+          "name": "photoshop_select_all",
+          "desc": "Select the entire document"
+        },
+        {
+          "name": "photoshop_deselect",
+          "desc": "Deselect all selections"
+        },
+        {
+          "name": "photoshop_invert_selection",
+          "desc": "Invert the current selection"
+        },
+        {
+          "name": "photoshop_create_layer_mask",
+          "desc": "Create a layer mask on the active layer from the current selection (reveal selection)."
+        },
+        {
+          "name": "photoshop_delete_layer_mask",
+          "desc": "Delete the layer mask from active layer"
+        },
+        {
+          "name": "photoshop_apply_layer_mask",
+          "desc": "Apply (merge) the layer mask to the layer"
+        },
+        {
+          "name": "photoshop_select_subject",
+          "desc": "Run Select Subject on the active layer (creates a pixel selection only, no mask)."
+        },
+        {
+          "name": "photoshop_content_aware_fill",
+          "desc": "Fill the current pixel selection using Content-Aware Fill."
+        },
+        {
+          "name": "photoshop_apply_gradient_mask",
+          "desc": "Apply a linear black-to-white gradient on the active layer mask channel (fade/blend)."
+        },
+        {
+          "name": "photoshop_create_clipping_mask",
+          "desc": "Create a clipping mask on the active layer (or a named layer)."
+        },
+        {
+          "name": "photoshop_release_clipping_mask",
+          "desc": "Release (remove) the clipping mask from the active layer (or a named layer)."
+        },
+        {
+          "name": "photoshop_play_action",
+          "desc": "Play a recorded action from the Actions palette"
+        },
+        {
+          "name": "photoshop_execute_script",
+          "desc": "Execute custom ExtendScript (JSX) code inside Photoshop (advanced escape hatch)."
+        },
+        {
+          "name": "photoshop_undo",
+          "desc": "Undo the last operation(s) - equivalent to Ctrl/Cmd+Z"
+        },
+        {
+          "name": "photoshop_redo",
+          "desc": "Redo the previously undone operation(s) - equivalent to Ctrl/Cmd+Shift+Z"
+        },
+        {
+          "name": "photoshop_get_history",
+          "desc": "Get the history states of the active document"
+        },
+        {
+          "name": "photoshop_move_layer_to_position",
+          "desc": "Move the active layer relative to another layer"
+        },
+        {
+          "name": "photoshop_move_layer_to_top",
+          "desc": "Move the active layer to the top of the layer stack"
+        },
+        {
+          "name": "photoshop_move_layer_to_bottom",
+          "desc": "Move the active layer to the bottom of the layer stack"
+        },
+        {
+          "name": "photoshop_move_layer_up",
+          "desc": "Move the active layer up one position in the layer stack"
+        },
+        {
+          "name": "photoshop_move_layer_down",
+          "desc": "Move the active layer down one position in the layer stack"
+        },
+        {
+          "name": "photoshop_get_state",
+          "desc": "Return a cheap read-only snapshot of Photoshop session state (active document, layer, sele"
+        },
+        {
+          "name": "photoshop_get_preview",
+          "desc": "Export the active document as a base64 JPEG preview for visual verification."
+        },
+        {
+          "name": "photoshop_get_capabilities",
+          "desc": "Return version-aware feature flags for the installed Photoshop (Select Subject v2, Generat"
+        },
+        {
+          "name": "photoshop_generative_fill",
+          "desc": "Fill the current selection using Adobe Generative Fill (Firefly) with a text prompt."
+        },
+        {
+          "name": "photoshop_generative_remove",
+          "desc": "Remove content using the AI Remove tool (or generative fill fallback) on the current selec"
+        },
+        {
+          "name": "photoshop_generative_expand",
+          "desc": "Extend the canvas beyond its edges using Generative Expand (Firefly)."
+        },
+        {
+          "name": "photoshop_generative_upscale",
+          "desc": "Upscale the active document using Generative Upscale (PS 27+)."
+        },
+        {
+          "name": "photoshop_sky_replacement",
+          "desc": "Replace the sky using Photoshop native Sky Replacement when available."
+        },
+        {
+          "name": "photoshop_generate_image",
+          "desc": "Generate image content from a text prompt (text-to-image) on blank or active document."
+        },
+        {
+          "name": "photoshop_neural_filter",
+          "desc": "Apply a Photoshop Neural Filter via the companion UXP bridge plugin."
+        },
+        {
+          "name": "photoshop_apply_layer_style",
+          "desc": "Apply a layer style (drop shadow, outer glow, stroke, bevel & emboss) to the active layer "
+        },
+        {
+          "name": "photoshop_apply_lut",
+          "desc": "Apply a Color Lookup (3D LUT) adjustment layer for cinematic color grading. Accepts a buil"
+        },
+        {
+          "name": "photoshop_adjust_vibrance",
+          "desc": "Create a Vibrance adjustment layer. Vibrance boosts muted colors while protecting skin ton"
+        },
+        {
+          "name": "photoshop_adjust_exposure",
+          "desc": "Create an Exposure adjustment layer (stops, offset, gamma correction)."
+        },
+        {
+          "name": "photoshop_apply_photo_filter",
+          "desc": "Create a Photo Filter adjustment layer (warming/cooling/custom tint with density control)."
+        },
+        {
+          "name": "photoshop_apply_gradient_map",
+          "desc": "Create a Gradient Map adjustment layer (black→white by default) for duotone/B&W tonal rema"
+        },
+        {
+          "name": "photoshop_list_datasets",
+          "desc": "List the data sets defined on the active document (Image > Variables > Data Sets)."
+        },
+        {
+          "name": "photoshop_import_datasets",
+          "desc": "Import a Photoshop variables/data-sets XML file into the active document (the same file Im"
+        },
+        {
+          "name": "photoshop_generate_from_datasets",
+          "desc": "Batch-export the active document once per data set: applies each data set, saves a copy, m"
+        },
+        {
+          "name": "photoshop_image_stack",
+          "desc": "Load 2+ image files into one document, convert to a smart object and apply a stack mode (m"
+        },
+        {
+          "name": "photoshop_export_as",
+          "desc": "Export a copy of the active document as PNG, JPEG, WebP or AVIF without changing the open "
+        },
+        {
+          "name": "photoshop_recipe_remove_background",
+          "desc": "THE tool for \"remove background\" / \"arka planı sil\" / cut out / isolate subject. Call this"
+        },
+        {
+          "name": "photoshop_recipe_enhance_portrait",
+          "desc": "Set up a non-destructive portrait enhancement: duplicates the active layer, builds a frequ"
+        },
+        {
+          "name": "photoshop_recipe_prepare_for_web",
+          "desc": "Export a web-optimized version of the active document: duplicate, convert to sRGB, downsca"
+        },
+        {
+          "name": "photoshop_recipe_export_social_variants",
+          "desc": "Render one JPEG per requested social-media platform from the active document. Each variant"
+        },
+        {
+          "name": "photoshop_recipe_apply_color_grade",
+          "desc": "Apply a named color grading preset as a non-destructive layer group (Hue/Saturation adjust"
+        },
+        {
+          "name": "photoshop_recipe_frequency_separation",
+          "desc": "Build a frequency separation stack (Low + High) on top of the active layer for hands-on re"
+        },
+        {
+          "name": "photoshop_recipe_batch_mockup_replace",
+          "desc": "Iterate a directory of asset images, replace the contents of the named Smart Object in the"
+        },
+        {
+          "name": "photoshop_recipe_organize_layers",
+          "desc": "Tidy the active document's layer stack: rename layers using a consistent scheme and option"
+        },
+        {
+          "name": "photoshop_recipe_gradient_fade",
+          "desc": "One-shot gradient fade on the active layer mask: creates a reveal-all mask if needed, then"
+        },
+        {
+          "name": "photoshop_recipe_sky_blend",
+          "desc": "One-shot sky composite: places an external sky image, adds a layer mask, and applies a hor"
+        },
+        {
+          "name": "photoshop_recipe_dodge_burn",
+          "desc": "One-shot dodge & burn setup: creates a 50% gray layer in Overlay or Soft Light mode for no"
+        },
+        {
+          "name": "photoshop_recipe_remove_distraction",
+          "desc": "One-shot distraction removal: generative AI remove when available, else content-aware fill"
+        },
+        {
+          "name": "photoshop_recipe_split_carousel",
+          "desc": "Split the active wide document into N equal vertical slices and export them as sequentiall"
+        },
+        {
+          "name": "photoshop_recipe_batch_watermark",
+          "desc": "Apply a text or logo watermark to every image in a folder and export watermarked JPEGs. Re"
+        },
+        {
+          "name": "photoshop_recipe_passport_photo",
+          "desc": "Turn the active portrait into a passport/ID photo: removes the background via Select Subje"
+        },
+        {
+          "name": "photoshop_recipe_csv_to_cards",
+          "desc": "Data-driven graphics batch: convert a CSV file into Photoshop data sets, apply each row to"
+        }
+      ]
+    },
+    {
+      "name": "xiangsu",
+      "ok": true,
+      "server": {
+        "name": "xiangsu-mcp-manager",
+        "version": "1.0.0"
+      },
+      "duration_ms": 1820,
+      "tool_count": 28,
+      "tools": [
+        {
+          "name": "health",
+          "desc": "检查 xiangsu-mcp-manager 是否可访问，并返回当前在线的编辑器实例数量。"
+        },
+        {
+          "name": "list_instances",
+          "desc": "列出当前在线的像塑编辑器实例。后续调用工具时需使用返回的 instance_id 指定目标实例。"
+        },
+        {
+          "name": "get_project_context",
+          "desc": "获取指定像塑编辑器实例的精简工程初始化与恢复上下文。上下文压缩后应使用 resume.handoff；核对工程后按 AGENTS.md 先完成本轮输入记录，再查询工程或规划特效；按"
+        },
+        {
+          "name": "report_install",
+          "desc": "在宿主完成像塑 MCP 安装尝试后调用，汇报成功或失败。"
+        },
+        {
+          "name": "get_scene",
+          "desc": "获取当前静态场景树，默认返回精简摘要。也可限定到某个对象的子树、限制返回深度，或仅返回包含名称的层级骨架。"
+        },
+        {
+          "name": "inspect",
+          "desc": "检查指定 GUID，并将结果标准化为场景对象、资源或组件。"
+        },
+        {
+          "name": "get_scene_view",
+          "desc": "将当前 Scene 面板截取为带标注的图片，并返回截图及记录各对象屏幕边界的附加数据。"
+        },
+        {
+          "name": "read_visual_scripting_graph",
+          "desc": "从磁盘读取工程的可视化脚本图清单，包括 Graph/graph.json、.compgraph 和 .ssubgraph 资产。"
+        },
+        {
+          "name": "describe_project",
+          "desc": "根据当前场景和资源清单生成精简的工程摘要。"
+        },
+        {
+          "name": "list_resources",
+          "desc": "按类型分组列出当前工程资源；可用 type_filter 收窄到 Material / Texture / VFX / Script / Model 等常见分类。"
+        },
+        {
+          "name": "preview_asset",
+          "desc": "按 GUID 预览资产。贴图和视频直接返回缩略图；材质、网格、模型和预制体会使用预览渲染器。"
+        },
+        {
+          "name": "validate_omtl",
+          "desc": "校验 OMTL 内容的语法。"
+        },
+        {
+          "name": "set_preview_video",
+          "desc": "按 tracking_type、精确 video_name 或精确 resource_url 切换当前 Preview 输入；建议先用 list_preview_videos 查看"
+        },
+        {
+          "name": "list_preview_videos",
+          "desc": "按 tracking_type 分组列出可用的预览输入，并包含编辑器当前可见的本地或工具提供的非跟踪媒体源。"
+        },
+        {
+          "name": "get_current_preview_video",
+          "desc": "读取当前选中的预览输入，包括 tracking_type、source_type、internal_type 和 resource_url。"
+        },
+        {
+          "name": "capture_preview",
+          "desc": "一次调用内重新加载预览并截取最新画面。"
+        },
+        {
+          "name": "interact_by_dsl",
+          "desc": "执行预览交互命令。支持 screenshot、touch/touch_down/touch_up、drag(x1,y1,x2,y2)、wait(ms)、reset_preview、"
+        },
+        {
+          "name": "query_knowledge",
+          "desc": "处理不熟悉的场景、组件或资源前，先搜索像塑知识库。每次调用只查询一个明确分类；宽泛检索使用英文 `query`，已知目标名称时使用精确查询参数。仅支持 component、obje"
+        },
+        {
+          "name": "project_status",
+          "desc": "获取稳定的工程元数据，包括 has_active_project、path、name、project_id、project_status、is_saved、is_changed、s"
+        },
+        {
+          "name": "save_plan",
+          "desc": "保存当前工程的方案 / design brief 到 `.mcp_agent/design_plan.md`，用于跨轮续接。它只持久化方案，不会替代 save_project 落盘"
+        },
+        {
+          "name": "update_handoff_context",
+          "desc": "维护当前像塑工程的 handoff 上下文，包括用户输入记录和可恢复的阶段摘要。"
+        },
+        {
+          "name": "save_project",
+          "desc": "将当前工程保存到磁盘。"
+        },
+        {
+          "name": "get_script_logs",
+          "desc": "读取编辑器最近采集到的结构化脚本 / 运行时日志；编译诊断优先使用 run_otsc_check。"
+        },
+        {
+          "name": "run_otsc_check",
+          "desc": "对当前工程或指定工程路径运行 OTSC 编译检查，用于诊断 TypeScript 编译问题。"
+        },
+        {
+          "name": "edit_by_dsl",
+          "desc": "用于批量编辑像塑场景和资源，覆盖绝大多数场景与资源编辑命令。调用前必须完整读取 SceneEditing Skill。"
+        },
+        {
+          "name": "generate_image",
+          "desc": "通过图片工作流生成一张图片资产并导入当前工程。需要生成多张图片、多段音频或图音混合资产时，请改用 generate_assets_batch。支持上传本地参考图和透明背景分割。"
+        },
+        {
+          "name": "generate_audio",
+          "desc": "通过音频工作流生成一个音频资产并导入当前工程。需要生成多段音频、多张图片或图音混合资产时，请改用 generate_assets_batch。目标时长应直接写入 prompt。"
+        },
+        {
+          "name": "generate_assets_batch",
+          "desc": "为当前工程批量生成图片和音频 AIGC 资产，并等待所有任务完成或失败后返回。"
+        }
+      ]
+    },
+    {
+      "name": "slider-mcp",
+      "ok": false,
+      "error": "MCP 进程退出 code=1",
+      "duration_ms": 2053
+    },
+    {
+      "name": "novel-library-copy",
+      "ok": true,
+      "server": {
+        "name": "novel-library",
+        "version": ""
+      },
+      "duration_ms": 2279,
+      "tool_count": 34,
+      "tools": [
+        {
+          "name": "project_create",
+          "desc": "创建一本新小说的项目（资料库），每个项目是独立目录，含资料/章节/图谱。"
+        },
+        {
+          "name": "project_list",
+          "desc": "列出资料库中的全部小说项目及其章节数、资料数、总字数。"
+        },
+        {
+          "name": "project_get",
+          "desc": "获取单个项目的元信息与统计（章节数、资料数、总字数、图谱规模）。"
+        },
+        {
+          "name": "project_update",
+          "desc": "更新项目元信息或写作设置；settings 为增量合并，其余字段传则改。"
+        },
+        {
+          "name": "project_delete",
+          "desc": "删除整个小说项目（资料、章节、图谱全部删除，不可恢复），需 confirm=true。"
+        },
+        {
+          "name": "material_create",
+          "desc": "为项目新增一份小说资料（Markdown 文档），如世界观、修炼体系、大纲、人物小传。"
+        },
+        {
+          "name": "material_list",
+          "desc": "列出项目下的资料（仅元信息，不含正文），可按分类/标签过滤。"
+        },
+        {
+          "name": "material_get",
+          "desc": "读取一份资料的完整正文。"
+        },
+        {
+          "name": "material_update",
+          "desc": "更新资料的标题/分类/正文/标签，传哪个改哪个。"
+        },
+        {
+          "name": "material_delete",
+          "desc": "删除一份资料。"
+        },
+        {
+          "name": "chapter_create",
+          "desc": "新建一章并写入内容或大纲；序号自动管理，字数自动统计。"
+        },
+        {
+          "name": "chapter_list",
+          "desc": "按顺序列出全部章节（序号、标题、状态、字数、梗概）。"
+        },
+        {
+          "name": "chapter_get",
+          "desc": "读取某一章的完整正文与元信息。"
+        },
+        {
+          "name": "chapter_update",
+          "desc": "更新章节正文/标题/梗概/状态/标签。写完一章后用本工具保存。"
+        },
+        {
+          "name": "chapter_delete",
+          "desc": "删除一章，其后章节自动重新连续编号（返回编号映射）。"
+        },
+        {
+          "name": "chapter_reorder",
+          "desc": "调整章节顺序并重新编号。"
+        },
+        {
+          "name": "entity_create",
+          "desc": "在知识图谱中创建实体（人物/地点/势力/物品/事件/概念等）。"
+        },
+        {
+          "name": "entity_get",
+          "desc": "获取实体详情：描述、属性、全部观察、全部关系（含别人指向它的关系）。"
+        },
+        {
+          "name": "entity_list",
+          "desc": "列出图谱实体（含观察条数，不含观察全文），可按类型/关键词过滤。"
+        },
+        {
+          "name": "entity_update",
+          "desc": "更新实体名称/类型/描述/属性。"
+        },
+        {
+          "name": "entity_delete",
+          "desc": "删除实体，其观察与关联的关系会一并删除。"
+        },
+        {
+          "name": "entity_merge",
+          "desc": "合并两个重复实体（如别名/错字）：观察去重迁移、关系重定向，然后删除源实体。"
+        },
+        {
+          "name": "observation_add",
+          "desc": "向实体追加一条观察（事实记录），是持续丰富图谱的主要方式。"
+        },
+        {
+          "name": "observation_remove",
+          "desc": "删除实体的某条观察（按 id 或原文）。"
+        },
+        {
+          "name": "relation_create",
+          "desc": "在两个已存在的实体之间建立有向关系；实体不存在时请先 entity_create。"
+        },
+        {
+          "name": "relation_list",
+          "desc": "列出关系（有向边），可按实体或关系类型过滤。"
+        },
+        {
+          "name": "relation_delete",
+          "desc": "删除一条（或一类）关系。"
+        },
+        {
+          "name": "graph_overview",
+          "desc": "获取知识图谱（全部节点与边）。"
+        },
+        {
+          "name": "graph_export",
+          "desc": "把知识图谱导出到项目 exports/ 目录（Markdown 关系图谱 + JSON），返回文件路径。"
+        },
+        {
+          "name": "graph_check",
+          "desc": "体检图谱：孤立/未分类实体、疑似重名、实体在对应来源中的登场情况。"
+        },
+        {
+          "name": "search_all",
+          "desc": "项目内检索。"
+        },
+        {
+          "name": "rag_status",
+          "desc": "查看项目的 RAG 检索层状态：当前生效后端（auto 优先 API、失败降级本地）、"
+        },
+        {
+          "name": "rag_reindex",
+          "desc": "全量重建项目的向量索引（章节+资料）。日常无需调用：写操作后检索会自动增量补索引。"
+        },
+        {
+          "name": "library_stats",
+          "desc": "资料库总览：全部项目及每个项目的章节数、字数、资料数、图谱规模。"
+        }
+      ]
+    },
+    {
+      "name": "ima",
+      "ok": true,
+      "server": {
+        "name": "IMA Copilot",
+        "version": "2.14.7"
+      },
+      "duration_ms": 9691,
+      "tool_count": 2,
+      "tools": [
+        {
+          "name": "ask",
+          "desc": "向腾讯 IMA 知识库询问任何问题"
+        },
+        {
+          "name": "ask_with_kb",
+          "desc": "向指定知识库询问问题（多知识库模式使用）"
+        }
+      ]
+    },
+    {
+      "name": "search-engine",
+      "ok": true,
+      "server": {
+        "name": "搜索引擎",
+        "version": "1.30.0"
+      },
+      "duration_ms": 1866,
+      "tool_count": 9,
+      "tools": [
+        {
+          "name": "search",
+          "desc": "多源精准检索。"
+        },
+        {
+          "name": "fetch_content",
+          "desc": "从 URL 获取真正内容(不是链接)。"
+        },
+        {
+          "name": "download_video",
+          "desc": "下载视频(yt-dlp,支持 1752 个站点:抖音/小红书/快手/YouTube/微博等)。"
+        },
+        {
+          "name": "search_images",
+          "desc": "图片检索(Bing 图片 + Wikimedia 双源兜底)。"
+        },
+        {
+          "name": "download_image",
+          "desc": "下载图片。"
+        },
+        {
+          "name": "list_sources",
+          "desc": "列出所有数据源及启用状态。"
+        },
+        {
+          "name": "web_render",
+          "desc": "用真实浏览器渲染 JS 页面(Playwright)。"
+        },
+        {
+          "name": "web_search_ext",
+          "desc": "第三方搜索 API(博查/秘塔/Tavily/SerpAPI/SearXNG)。"
+        },
+        {
+          "name": "check_proxy",
+          "desc": "检查系统代理配置 — 境外源(Wikipedia/YouTube)连不上时先查这个。"
+        }
+      ]
+    },
+    {
+      "name": "cv-annot",
+      "ok": true,
+      "server": {
+        "name": "cv-annot",
+        "version": "1.30.0"
+      },
+      "duration_ms": 1853,
+      "tool_count": 10,
+      "tools": [
+        {
+          "name": "annot_list_projects",
+          "desc": "列出所有已导入的项目。"
+        },
+        {
+          "name": "annot_import_project",
+          "desc": "导入(注册)一个代码项目 — 已存在则报错,更新文件用 annot_reimport。"
+        },
+        {
+          "name": "annot_reimport",
+          "desc": "重新扫描项目目录(文件有增改后调用,刷新文件清单与哈希)。"
+        },
+        {
+          "name": "annot_get_file",
+          "desc": "读取项目内代码文件全文 — 分析写标注前必调。"
+        },
+        {
+          "name": "annot_list_annotations",
+          "desc": "列出已有标注 — 写新标注前必调(查重+延续风格)。"
+        },
+        {
+          "name": "annot_add_annotation",
+          "desc": "写入一条深度标注(核心工具)。body 必须是 150-400 字深度讲解,含四要素:"
+        },
+        {
+          "name": "annot_update_annotation",
+          "desc": "更新标注(部分字段)。patch 为 JSON 对象字符串,可含 title/category/kind/level/algorithms/body/refs/startLine/"
+        },
+        {
+          "name": "annot_delete_annotation",
+          "desc": "删除一条标注。"
+        },
+        {
+          "name": "annot_summary",
+          "desc": "项目覆盖统计 — 规划\"接下来分析哪些文件\"用。"
+        },
+        {
+          "name": "annot_taxonomy",
+          "desc": "读取三维分类体系 — 写标注前对齐 id 用。"
+        }
+      ]
+    }
+  ]
+}

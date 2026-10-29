@@ -1,0 +1,369 @@
+[
+  {
+    "id": "run_mvs1w42op7wjde",
+    "workflow": "tech_research",
+    "status": "failed",
+    "duration_ms": 2,
+    "started_at": "2026-10-28T11:48:13.344Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "failed",
+        "duration_ms": 1
+      },
+      {
+        "id": "search",
+        "status": "failed",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs1wnibc0fst4",
+    "workflow": "tech_research",
+    "status": "done",
+    "duration_ms": 54454,
+    "started_at": "2026-10-28T11:48:38.531Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 335
+      },
+      {
+        "id": "search",
+        "status": "done",
+        "duration_ms": 54114
+      },
+      {
+        "id": "archive",
+        "status": "done",
+        "duration_ms": 4
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2drhwu2w7yv",
+    "workflow": "lesson_capture",
+    "status": "done",
+    "duration_ms": 292,
+    "started_at": "2026-10-28T12:01:56.852Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 279
+      },
+      {
+        "id": "save",
+        "status": "done",
+        "duration_ms": 11
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2eothvequzu",
+    "workflow": "tech_research",
+    "status": "done",
+    "duration_ms": 57648,
+    "started_at": "2026-10-28T12:02:40.037Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 217
+      },
+      {
+        "id": "search",
+        "status": "done",
+        "duration_ms": 57424
+      },
+      {
+        "id": "archive",
+        "status": "done",
+        "duration_ms": 5
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3i12oya9w0z",
+    "workflow": "code_study",
+    "status": "failed",
+    "duration_ms": 7119,
+    "started_at": "2026-10-28T12:33:15.504Z",
+    "steps": [
+      {
+        "id": "import",
+        "status": "failed",
+        "duration_ms": 2505
+      },
+      {
+        "id": "reimport",
+        "status": "failed",
+        "duration_ms": 1242
+      },
+      {
+        "id": "read",
+        "status": "failed",
+        "duration_ms": 3370
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3iubr2azgyu",
+    "workflow": "code_study",
+    "status": "done",
+    "duration_ms": 1906,
+    "started_at": "2026-10-28T12:33:53.415Z",
+    "steps": [
+      {
+        "id": "import",
+        "status": "done",
+        "duration_ms": 1500
+      },
+      {
+        "id": "reimport",
+        "status": "failed",
+        "duration_ms": 146
+      },
+      {
+        "id": "read",
+        "status": "done",
+        "duration_ms": 115
+      },
+      {
+        "id": "summary",
+        "status": "done",
+        "duration_ms": 143
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3jed7otiufc",
+    "workflow": "image_understand",
+    "status": "failed",
+    "duration_ms": 3259,
+    "started_at": "2026-10-28T12:34:19.387Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "failed",
+        "duration_ms": 3257
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3lgwxnb2v3w",
+    "workflow": "image_understand",
+    "status": "failed",
+    "duration_ms": 4725,
+    "started_at": "2026-10-28T12:35:56.001Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "failed",
+        "duration_ms": 4724
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3q5mmp3m8l7",
+    "workflow": "image_understand",
+    "status": "failed",
+    "duration_ms": 5877,
+    "started_at": "2026-10-28T12:39:34.654Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "failed",
+        "duration_ms": 5876
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3r5w0fx6px8",
+    "workflow": "image_understand",
+    "status": "failed",
+    "duration_ms": 250020,
+    "started_at": "2026-10-28T12:40:21.648Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "failed",
+        "duration_ms": 250018
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3x42cl3z96y",
+    "workflow": "image_understand",
+    "status": "done",
+    "duration_ms": 17981,
+    "started_at": "2026-10-28T12:44:59.220Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "done",
+        "duration_ms": 17804
+      },
+      {
+        "id": "archive",
+        "status": "done",
+        "duration_ms": 176
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4h9jb42d1ub",
+    "workflow": "lesson_capture",
+    "status": "done",
+    "duration_ms": 241,
+    "started_at": "2026-10-28T13:00:39.431Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 233
+      },
+      {
+        "id": "save",
+        "status": "done",
+        "duration_ms": 7
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4nw5fv03hpd",
+    "workflow": "tech_research",
+    "status": "done",
+    "duration_ms": 44062,
+    "started_at": "2026-10-28T13:05:48.675Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 180
+      },
+      {
+        "id": "search",
+        "status": "done",
+        "duration_ms": 43876
+      },
+      {
+        "id": "archive",
+        "status": "done",
+        "duration_ms": 5
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4pgpmrgao1d",
+    "workflow": "image_understand",
+    "status": "done",
+    "duration_ms": 3599,
+    "started_at": "2026-10-28T13:07:01.978Z",
+    "steps": [
+      {
+        "id": "describe",
+        "status": "done",
+        "duration_ms": 3436
+      },
+      {
+        "id": "archive",
+        "status": "done",
+        "duration_ms": 161
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4puk3kkr73u",
+    "workflow": "code_study",
+    "status": "failed",
+    "duration_ms": 6383,
+    "started_at": "2026-10-28T13:07:19.923Z",
+    "steps": [
+      {
+        "id": "import",
+        "status": "failed",
+        "duration_ms": 2842
+      },
+      {
+        "id": "reimport",
+        "status": "failed",
+        "duration_ms": 131
+      },
+      {
+        "id": "read",
+        "status": "failed",
+        "duration_ms": 3408
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4tpxx0geuf5",
+    "workflow": "code_study",
+    "status": "done",
+    "duration_ms": 3248,
+    "started_at": "2026-10-28T13:10:20.565Z",
+    "steps": [
+      {
+        "id": "import",
+        "status": "failed",
+        "duration_ms": 2835
+      },
+      {
+        "id": "reimport",
+        "status": "done",
+        "duration_ms": 136
+      },
+      {
+        "id": "read",
+        "status": "done",
+        "duration_ms": 131
+      },
+      {
+        "id": "summary",
+        "status": "done",
+        "duration_ms": 143
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4u5d4x8acvn",
+    "workflow": "lesson_capture",
+    "status": "done",
+    "duration_ms": 305,
+    "started_at": "2026-10-28T13:10:40.552Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 295
+      },
+      {
+        "id": "save",
+        "status": "done",
+        "duration_ms": 9
+      }
+    ]
+  },
+  {
+    "id": "run_mvs4uswwkem8h0",
+    "workflow": "lesson_capture",
+    "status": "done",
+    "duration_ms": 266,
+    "started_at": "2026-10-28T13:11:11.072Z",
+    "steps": [
+      {
+        "id": "precheck",
+        "status": "done",
+        "duration_ms": 256
+      },
+      {
+        "id": "save",
+        "status": "done",
+        "duration_ms": 9
+      }
+    ]
+  }
+]

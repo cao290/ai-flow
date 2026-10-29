@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ai-flow · AI 工具流编排器</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="logo">◈</span>
+    <div>
+      <h1>ai-flow</h1>
+      <p>AI 工具流编排器 · <span id="headSub">动态工具索引</span></p>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main>
+  <!-- 左栏:工作流 -->
+  <aside class="col col-flows">
+    <h2>工作流</h2>
+    <div id="flows" class="flow-list"></div>
+
+    <h2 class="mt">工具索引</h2>
+    <input type="search" id="toolSearch" placeholder="搜索工具…" autocomplete="off">
+    <div id="toolMeta" class="tool-meta"></div>
+    <div id="tools" class="tool-list"></div>
+  </aside>
+
+  <!-- 中栏:参数与执行 -->
+  <section class="col col-run">
+    <h2 id="flowTitle">选择一个工作流</h2>
+    <p id="flowDesc" class="desc">从左侧选择工作流，填入参数后执行。</p>
+
+    <div id="stepsPreview" class="steps-preview"></div>
+
+    <form id="paramForm" class="param-form"></form>
+
+    <div class="actions">
+      <button id="runBtn" class="primary" disabled>执行</button>
+      <label class="force"><input type="checkbox" id="forceChk"> 强制重跑(忽略幂等缓存)</label>
+    </div>
+
+    <div id="runStatus" class="run-status"></div>
+    <pre id="runOutput" class="output"></pre>
+  </section>
+
+  <!-- 右栏:历史 -->
+  <aside class="col col-history">
+    <h2>执行历史</h2>
+    <div id="runs" class="run-list"></div>
+  </aside>
+</main>
+
+<script src="/web/app.js"></script>
+</body>
+</html>

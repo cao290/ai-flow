@@ -1,0 +1,31 @@
+{
+  "measured_at": "2026-10-28T12:31:49.047Z",
+  "repeat": 30,
+  "note": "本地 mock MCP 服务,零网络延迟;测的是编排引擎自身开销",
+  "rows": [
+    {
+      "steps": 1,
+      "manual_avg_ms": 0.187,
+      "manual_p50_ms": 0.136,
+      "workflow_avg_ms": 0.207,
+      "workflow_p50_ms": 0.168,
+      "overhead_pct": 10.4
+    },
+    {
+      "steps": 5,
+      "manual_avg_ms": 0.885,
+      "manual_p50_ms": 0.704,
+      "workflow_avg_ms": 0.888,
+      "workflow_p50_ms": 0.83,
+      "overhead_pct": 0.4
+    },
+    {
+      "steps": 20,
+      "manual_avg_ms": 1703.48,
+      "manual_p50_ms": 1713.368,
+      "workflow_avg_ms": 1771.816,
+      "workflow_p50_ms": 1759.446,
+      "overhead_pct": 4
+    }
+  ]
+}

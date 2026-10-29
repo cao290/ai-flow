@@ -1,0 +1,569 @@
+[
+  {
+    "id": "run_mvs2cgm83u2kuy",
+    "workflow": "mock_chain",
+    "status": "failed",
+    "started_at": "2026-10-28T12:00:56.096Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "first",
+        "status": "failed",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2cgmc4wlh7z",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T12:00:56.100Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2cgmesqjflw",
+    "workflow": "optional_case",
+    "status": "failed",
+    "started_at": "2026-10-28T12:00:56.102Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 0
+      },
+      {
+        "id": "good",
+        "status": "skipped",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2d94ipc05gp",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-28T12:01:33.043Z",
+    "duration_ms": 165,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 162
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2d996uuno34",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T12:01:33.210Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3021
+      }
+    ]
+  },
+  {
+    "id": "run_mvs2dbl58lzre2",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-28T12:01:36.233Z",
+    "duration_ms": 3018,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3017
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3h977hhkmup",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-28T12:32:39.379Z",
+    "duration_ms": 127,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 125
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3h9asas4lbi",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T12:32:39.508Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3017
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3hbmnwrimwi",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-28T12:32:42.527Z",
+    "duration_ms": 3023,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3022
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3yduum66pfk",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-28T12:45:58.566Z",
+    "duration_ms": 191,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 189
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3ye07etbb0d",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T12:45:58.759Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3016
+      }
+    ]
+  },
+  {
+    "id": "run_mvs3ygc2cabuw5",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-28T12:46:01.778Z",
+    "duration_ms": 3021,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3021
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5kavxw1to4q",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-28T13:31:00.765Z",
+    "duration_ms": 181,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 178
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5kb10oizw00",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T13:31:00.948Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3023
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5kdd1os1u4u",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-28T13:31:03.973Z",
+    "duration_ms": 3018,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3018
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5lrhnxkxj0e",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-28T13:32:08.939Z",
+    "duration_ms": 205,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 204
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5lrneqmf9qv",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-28T13:32:09.146Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3026
+      }
+    ]
+  },
+  {
+    "id": "run_mvs5ltzjh8w4t3",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-28T13:32:12.175Z",
+    "duration_ms": 3021,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3021
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvssq6c1rs9hmj",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-29T00:19:25.969Z",
+    "duration_ms": 168,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 166
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvssq6gtflhxbd",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-29T00:19:26.141Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3018
+      }
+    ]
+  },
+  {
+    "id": "run_mvssq8so92rumz",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-29T00:19:29.160Z",
+    "duration_ms": 3011,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3010
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvssr0o0ne33zt",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-29T00:20:05.280Z",
+    "duration_ms": 187,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 185
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvssr0t9d50w5q",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-29T00:20:05.469Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3014
+      }
+    ]
+  },
+  {
+    "id": "run_mvssr351rmacml",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-29T00:20:08.485Z",
+    "duration_ms": 3007,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3006
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvssr8idjg2ggn",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-29T00:20:15.445Z",
+    "duration_ms": 173,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 172
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvssr8n9x8x3yu",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-29T00:20:15.621Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3010
+      }
+    ]
+  },
+  {
+    "id": "run_mvssrayxlg4vng",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-29T00:20:18.633Z",
+    "duration_ms": 3006,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3005
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvst819en3razv",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-29T00:33:19.202Z",
+    "duration_ms": 188,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 186
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 1
+      }
+    ]
+  },
+  {
+    "id": "run_mvst81eope7xoe",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-29T00:33:19.392Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3010
+      }
+    ]
+  },
+  {
+    "id": "run_mvst83qcmr13xs",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-29T00:33:22.404Z",
+    "duration_ms": 3009,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3009
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvst8cfvedec40",
+    "workflow": "mock_chain",
+    "status": "done",
+    "started_at": "2026-10-29T00:33:33.691Z",
+    "duration_ms": 197,
+    "steps": [
+      {
+        "id": "first",
+        "status": "done",
+        "duration_ms": 195
+      },
+      {
+        "id": "second",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "id": "run_mvst8clfhzjlvx",
+    "workflow": "fail_case",
+    "status": "failed",
+    "started_at": "2026-10-29T00:33:33.891Z",
+    "duration_ms": null,
+    "steps": [
+      {
+        "id": "boom",
+        "status": "failed",
+        "duration_ms": 3010
+      }
+    ]
+  },
+  {
+    "id": "run_mvst8ex39a4yhn",
+    "workflow": "optional_case",
+    "status": "done",
+    "started_at": "2026-10-29T00:33:36.903Z",
+    "duration_ms": 3024,
+    "steps": [
+      {
+        "id": "bad",
+        "status": "failed",
+        "duration_ms": 3023
+      },
+      {
+        "id": "good",
+        "status": "done",
+        "duration_ms": 0
+      }
+    ]
+  }
+]

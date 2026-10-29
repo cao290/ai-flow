@@ -86,7 +86,13 @@ search-engine hlib-mcp   cv-annot    novel-library  experience   photoshop
 
 ## 3.1 Web 看板
 
-`node server.js` 后打开 `http://127.0.0.1:8792`：
+**启动**：双击 `启动看板.bat`（自动开浏览器；按端口精确清理旧进程，不误伤其他 node 程序），或手动：
+
+```
+node server.js
+```
+
+打开 `http://127.0.0.1:8792`：
 
 - 左栏：5 个内置工作流 + 204 个工具的统一索引（实时搜索）
 - 中栏：步骤预览（标注"可选/幂等"）→ 参数表单（从模板自动推断）→ 执行

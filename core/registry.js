@@ -31,12 +31,25 @@ class ToolRegistry {
     this.servers = new Map();   // serviceName -> { client, tools: Map, status }
     this.index = new Map();     // qualifiedName -> tool descriptor
     this.proxyNotes = [];       // 记录哪些服务被注入了代理
+    this.connecting = new Map(); // serviceName -> in-flight connect promise(防并发重复连接)
   }
 
   /** 启动服务并拉取工具清单 */
   async connect(serviceName, { timeoutMs = 30000 } = {}) {
     if (this.servers.has(serviceName)) return this.servers.get(serviceName);
 
+    // 并发调用同一服务时,复用进行中的连接,避免"第二个调用者拿到还在握手的实例"
+    if (this.connecting.has(serviceName)) {
+      return this.connecting.get(serviceName);
+    }
+    const p = this._connectInner(serviceName, { timeoutMs }).finally(() => {
+      this.connecting.delete(serviceName);
+    });
+    this.connecting.set(serviceName, p);
+    return p;
+  }
+
+  async _connectInner(serviceName, { timeoutMs = 30000 } = {}) {
     const cfg = this.registry[serviceName];
     if (!cfg) throw new Error(`未注册的 MCP 服务: ${serviceName}`);
 
